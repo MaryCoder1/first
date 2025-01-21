@@ -1,0 +1,18 @@
+name: Test Workflow
+
+on: 
+  pull_request:
+
+jobs:
+  test: 
+    runs-on: ${{ matrix.os }}
+    strategy: 
+      matrix: 
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Run Python Scripts
+        run: |
+          python sub.py
+          python omo.py
