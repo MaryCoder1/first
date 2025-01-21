@@ -9,8 +9,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Run Python Script
-        run: python sub.py
+      - name: Run Python Scripts
+        run: |
+          python sub.py
+          python demo.py
 
 
 
