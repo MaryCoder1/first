@@ -12,7 +12,7 @@ jobs:
       - name: Run Python Scripts
         run: |
           python sub.py
-          python temp.py
+          python omo.py
 
 
 
