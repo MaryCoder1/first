@@ -1,11 +1,22 @@
 name: Test Workflow
 
-on: [push]
+on: 
+  push:
 
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            -run: python sub.py
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Run Python Script
+        run: python sub.py
+
+
+
+    
+            
+
+
+            
         
