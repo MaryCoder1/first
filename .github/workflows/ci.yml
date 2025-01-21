@@ -12,7 +12,7 @@ jobs:
       - name: Run Python Scripts
         run: |
           python sub.py
-          python demo.py
+          python temp.py
 
 
 
